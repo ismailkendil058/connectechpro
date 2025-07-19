@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Noto+Sans:wght@400;500;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles */
+body {
+  font-family: Inter, "Noto Sans", sans-serif;
+}
+
+/* Custom container queries */
+@container (min-width: 480px) {
+  .@[480px]:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .@[480px]:py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+  .@[480px]:rounded-lg {
+    border-radius: 0.5rem;
+  }
+}
+
+/* Custom scrollbar hiding */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Custom colors */
+.text-\[#111418\] {
+  color: #111418;
+}
+
+.text-\[#637588\] {
+  color: #637588;
+}
+
+.bg-\[#1672ce\] {
+  background-color: #1672ce;
+}
+
+.bg-\[#f0f2f4\] {
+  background-color: #f0f2f4;
+}
+
+.border-\[#f0f2f4\] {
+  border-color: #f0f2f4;
+}
+
+/* Custom text sizes */
+.text-\[28px\] {
+  font-size: 28px;
+}
+
+.text-\[22px\] {
+  font-size: 22px;
+}
+
+/* Custom tracking */
+.tracking-light {
+  letter-spacing: -0.015em;
+}
+
+.tracking-\[-0\.015em\] {
+  letter-spacing: -0.015em;
+}
+
+.tracking-\[0\.015em\] {
+  letter-spacing: 0.015em;
+}
+
+/* Custom min-width */
+.min-w-\[84px\] {
+  min-width: 84px;
+}
+
+.min-w-\[158px\] {
+  min-width: 158px;
+}
+
+.min-w-60 {
+  min-width: 15rem;
+}
+
+/* Custom max-width */
+.max-w-\[480px\] {
+  max-width: 480px;
+}
+
+/* Custom size */
+.size-12 {
+  width: 3rem;
+  height: 3rem;
+}
+
+.size-full {
+  width: 100%;
+  height: 100%;
+}
+
+/* Custom aspect ratio */
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
+
+/* Custom grid */
+.grid-cols-\[repeat\(auto-fit\,minmax\(158px\,1fr\)\)\] {
+  grid-template-columns: repeat(auto-fit, minmax(158px, 1fr));
+}
+
+/* Custom flex */
+.flex-1 {
+  flex: 1 1 0%;
+}
+
+/* Custom gap */
+.gap-1 {
+  gap: 0.25rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+/* Custom padding */
+.p-4 {
+  padding: 1rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.pt-2 {
+  padding-top: 0.5rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
+}
+
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
+
+.pb-3 {
+  padding-bottom: 0.75rem;
+}
+
+/* Custom margin */
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
+
+/* Custom border */
+.border-t {
+  border-top-width: 1px;
+}
+
+/* Custom background */
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
+/* Custom overflow */
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+/* Custom position */
+.relative {
+  position: relative;
+}
+
+/* Custom flex */
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-stretch {
+  align-items: stretch;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+/* Custom grid */
+.grid {
+  display: grid;
+}
+
+/* Custom text */
+.text-white {
+  color: #ffffff;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+/* Custom font weights */
+.font-medium {
+  font-weight: 500;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+/* Custom leading */
+.leading-normal {
+  line-height: 1.5;
+}
+
+.leading-tight {
+  line-height: 1.25;
+}
+
+/* Custom background colors */
+.bg-white {
+  background-color: #ffffff;
+}
+
+/* Custom border radius */
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+/* Custom height */
+.h-5 {
+  height: 1.25rem;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-12 {
+  height: 3rem;
+}
+
+.min-h-80 {
+  min-height: 20rem;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+/* Custom width */
+.w-8 {
+  width: 2rem;
+}
+
+.w-12 {
+  width: 3rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+/* Custom cursor */
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* Custom overflow */
+.overflow-hidden {
+  overflow: hidden;
+}
+
+/* Custom truncate */
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Custom shrink */
+.shrink-0 {
+  flex-shrink: 0;
+}
+
+/* Custom grow */
+.grow {
+  flex-grow: 1;
+}
+
+/* Custom min-width */
+.min-w-0 {
+  min-width: 0px;
+}
+
+/* Custom group */
+.group\/design-root {
+  position: relative;
+}
+
+/* Custom container */
+.@container {
+  container-type: inline-size;
+}
+
+/* Custom background image with gradient overlay */
+.hero-bg {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 25%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDBFrI4q1CGXTCV7SaF7b20HRAaP7qPyfGLYr85bN9bM2rHAHR8A2NoKJWc3n7dVjNS-66fhCemYw8ypKKqw061zRsMw5BtO7rv-4RXd8xXKMgro4XOlcAvZC3XKsRUrvNKpsvTB756r3WT64VUIhdK0WUvwlZhTPn86qQW3cRN4x_hkOfFHrVIA66lua8iwjnUrub3vBOTbwfjFUSpsxNulQWWEnT6BGP6IxKo2ZLJ0yr2fWoBF_cbIYDUI_gwqhsxiStLBXiHEkc");
+}
+
+/* Certification card backgrounds */
+.cert-pmp {
+  background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBa5qIZxVi5nX3ZOMDRvyPqHaLzss98AqFaZG5J71P1IY1uRG7mbuZO2JCsAA6H3b99TooBECa7WLnbA_tqX2LNV2v5WbkoKg9mWcz60ir-VQe_Skcvn7MFAr4693LDoH0MGlwvSs5mCjrPTHRcDu0Csm4IaoZiHE8xyWaLtI1MmJ4jFQJkA8V5TTa4uPGrRkWnWDdV3HZ7yLgF_8hrDZ7-8fSZs0lTB6cIQ3JlZEFGfnV-2I0q2UrNprsOnCuURALryYMcGFFydVg");
+}
+
+.cert-agile {
+  background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAj6OGew6plgq2X3JYBk-Bm_ZTzgNh9rO6kH9vWcDM7rjlyTQZorWLuTEywUrpTzd9lA1h5J6qzbaBWlunnnIaizgv42gzBpqMRNswgfWAJ01H44R_0W1CmBRElp1Ffuwgq4vlN0043mOfU6uvrJW5W-tAPUH39pLPfKRZMml7pp35kkSRcVZdrsKa6quztdrA_sXqYd_8fZkDlIbW_3sAL3tj-raOJHZvbCYWFKIUScr_Y551HV_2DNJ2FEwmgmj5HScwFuI5zzBY");
+}
+
+.cert-other {
+  background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCVwVjmWN0wCFkc4aH1mQ4EuMz-aMZsu8BTwuGmFUp5hualqcbGEJXN_7Og_HhdvGAoQF3JBWflppoSTM5I-ikzarEO6niFNyjyorcJu_ON1ZO0xQxrEmeOLjQyXEIj1cDB4pioLeRPR68rri6kGiT27Jn-M1hTvxRYbEUWC_2WwvlbsAZu6_2Ax8HC2M8XPZW2YCphScGzSb-r9zlt-0Qwdtnakm5E4CqcYe248ytqBDwubC8wpW4fLWl7r4wt7J07ZFM19Z_4jos");
+}
+
+/* Testimonial card backgrounds */
+.testimonial-sarah {
+  background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD4v-5Qb-qyDoW0eTD1R3c15a4yAdIY_SQ1O7A64aPhAPC9-J67wU9D71QPmz1rrTIwJc8oHMz7ARnOPMn5YpAdDnr-vBQ46ttdk0eo_OF4qa8pYbD1PjfsSgQok7I3VYH2MLSpMNayk3w-VQ2DiXynwTf1MXob3vhPJuIm7vI80W9TlW6EWy43uSTbkcMTEx7klLz2TiVU3TdxaEvW2-kfQrW2FQTz6O7T4lsTgbSddHaXQrSmwG7SxHPJrsgvol0363gRkgs7bI4");
+}
+
+.testimonial-david {
+  background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB8I5yjAaymZqsDbeBn2p0JZBXkOgaA61tlA61Zjx6-VR_N78yyw3xqXQaVTjesBwxwi__FRhjzfZOjEKICL0CDRowfGAX5VRNgYDTHI5P3aXtsQmSN-EVfcbU6hfMGPwvbuD22hTbFFowwJHyIq28k8FSeMvj3jO5KDabz2gxtkFlhSzvZfnWg8tr304XMGwmBdh9x54Dt1iLJyPXoQKgi2Gjbv2ndEnWas3gE8HRcwwXefZYvbkjJunQb9jOIrH-LPHB-mvANIcE");
+}
+
+.testimonial-maria {
+  background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC5CfhJu4Q1TVQrOE5lIcwZ0HzXKJXSoAa97BqBRFxgWXYHz5hJx4bYLxu6TCttn3NHuriyNySDPMORn8MvJ0nF7-Js8hh1z-ZSUlDa7FvikwOCGqkz7hkTCAtDBZXFbQwY04Ym0gDF3XR9TulMiwuQj1ejXJinDlt1s7NVQV4N9t1FdC_W8F5xp3hT1Dnu6OaVUkSnSBpb7_nToDX7QYi0lANVfwj-ndD1WEcYAtRTLUTBSZyb9nUXnYsKLWfFAtupTYVFtKF4qn8");
+}
+
+/* Partner logos */
+.partner-1 {
+  background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA9PIHY2M5wltF9L8QalOlJaytc2fIF8-0SLmHTAME-eJc-sVkSNN3PILEGJYKavdPH47Yvbg4KrJ-TfsALhuUSiTAflMJQzOlGFE_J780_w9xQZH4TApYNTmG8U6yMnDWrh35q-FziX6z9lZS0qJAbuEAr94Txa76-6_Sjz-51FL4hzq3w2zxBPUGm1K2bK-_TFdcGekvYL4vtu-1i793UvhhhppfbG9aImk_FryW-3Eh3QJruYgPkZkzyhYPjBU1e2BjZYS8TeIw");
+}
+
+.partner-2 {
+  background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDB-EWKBecwLXhCH7_ox6wO1vyNpUyBFTPd9-zGIaPd3zOghZaOwkfJIlxSKJ6YmjzNNA3RcHkzYSacF8R92lKA3ZSeBTtYghrElqTSAslpAz-6eYYht2xbeycoOImqhkiDW_aEHseh7_XaH_NdOYxQ7BK_Aw_GKwTAIN0fzzRmjTcHPBWPGQlSyFr_aAM8AJcsceJCcOSBMUOomwFahpavqxTBz9UeoMFNAgvf3pTribtfg5Tb12aoML0Kga2dqgr_fYb8I7iLkfM");
+}
+
+.partner-3 {
+  background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAwuI4OvW8h3OHaDv50M13l4NopISsa-RjAWFXDeN9lh87NjcaA5doshthwEPjsogHZOTU0X-yCMJu9eZpZ79qkynG4ts3GBla9CfkW9E_8zcvyZw_uVvBN0vMXXGbNpDqpzMKruXYfhO6GxCOAFdBz9N1go8uJlxwqJam6sOQZgy6RbRWIYaVJwz_j9Zu9pFL6SJQt--2FGuP_tfK9CW3nrCMKrdblZ0ccNrhDfbxTOI_I-phmqtfC7w1o023sq9ZDJIFuuwPRqXc");
+} 
